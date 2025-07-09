@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Twitter, Github, MessageCircle, Mail } from 'lucide-react'
+import logo from '../assets/logo.png'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
@@ -39,10 +40,13 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="lg:col-span-2">
             <Link to="/" className="flex items-center space-x-2 mb-4">
-              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="20" cy="20" r="18" stroke="#5D55E8" strokeWidth="2"/>
-                <path d="M20 10C25.523 10 30 14.477 30 20C30 25.523 25.523 30 20 30C18.5 30 17 29.5 15.5 28.5C17.5 28 19 26.5 20 24.5C21 26.5 22.5 28 24.5 28.5C26 27.5 27 25.5 27 23C27 19 24 16 20 16C16 16 13 19 13 23C13 25.5 14 27.5 15.5 28.5" fill="#5D55E8"/>
-              </svg>
+              <img 
+                src={logo} 
+                alt="AlphaMoon Logo" 
+                width="40" 
+                height="40" 
+                className="object-contain"
+              />
               <span className="text-xl font-bold text-white">AlphaMoon</span>
             </Link>
             <p className="text-neutral-gray text-sm mb-4 max-w-sm">

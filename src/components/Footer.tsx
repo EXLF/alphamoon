@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { Twitter, Github, MessageCircle, Mail } from 'lucide-react'
 import logo from '../assets/logo.png'
+import AlphaMoonLogo from './AlphaMoonLogo'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
@@ -39,7 +40,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Logo and Description */}
           <div className="lg:col-span-2">
-            <Link to="/" className="flex items-center space-x-2 mb-4">
+            <Link to="/" className="flex items-center space-x-3 mb-4">
               <img 
                 src={logo} 
                 alt="AlphaMoon Logo" 
@@ -47,7 +48,7 @@ const Footer = () => {
                 height="40" 
                 className="object-contain"
               />
-              <span className="text-xl font-bold text-white">AlphaMoon</span>
+              <AlphaMoonLogo height={28} />
             </Link>
             <p className="text-neutral-gray text-sm mb-4 max-w-sm">
               AlphaMoon - 为专业空投猎人打造的终极武器库。告别繁琐，拥抱高效，最大化你的空投收益。

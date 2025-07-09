@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { ArrowRight, Sparkles } from 'lucide-react'
+import AlphaMoonLogo from '../AlphaMoonLogo'
 
 const HeroSection = () => {
   return (
@@ -53,13 +54,14 @@ const HeroSection = () => {
           </motion.div>
 
           {/* Main Title */}
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-            AlphaMoon
-            <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-gold to-yellow-300">
+          <div className="mb-6">
+            <div className="flex justify-center mb-4">
+              <AlphaMoonLogo height={80} singleLine={false} className="max-w-full" />
+            </div>
+            <h2 className="text-3xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-brand-gold to-yellow-300">
               开启你的Web3 Alpha之旅
-            </span>
-          </h1>
+            </h2>
+          </div>
 
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-neutral-gray mb-10 max-w-3xl mx-auto">

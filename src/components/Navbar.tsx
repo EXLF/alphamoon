@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom'
 import { Search, Wallet, Menu, X } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 import logo from '../assets/logo.png'
+import AlphaMoonLogo from './AlphaMoonLogo'
 
 const Navbar = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false)
@@ -34,7 +35,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center space-x-3">
             <img 
               src={logo} 
               alt="AlphaMoon Logo" 
@@ -42,7 +43,7 @@ const Navbar = () => {
               height="40" 
               className="object-contain"
             />
-            <span className="text-xl font-bold text-white">AlphaMoon</span>
+            <AlphaMoonLogo height={28} className="hidden sm:block" />
           </Link>
 
           {/* Desktop Navigation */}

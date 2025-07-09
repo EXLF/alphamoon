@@ -129,7 +129,7 @@ const AlphaMoonTools = () => {
       {/* Hero Section */}
       <section className="relative py-20 overflow-hidden">
         {/* Background Effects */}
-        <div className="absolute inset-0 bg-gradient-to-br from-brand-accent/5 via-transparent to-brand-accent/5"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-brand-purple/5 via-transparent to-brand-purple/5"></div>
         
         <div className="container mx-auto px-4 relative z-10">
           <motion.div
@@ -141,7 +141,7 @@ const AlphaMoonTools = () => {
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
               AlphaMoon
               <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent to-yellow-300">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-purple to-brand-gold">
                 为专业空投猎人打造的终极武器库
               </span>
             </h1>
@@ -154,7 +154,7 @@ const AlphaMoonTools = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="inline-flex items-center space-x-2 bg-brand-accent text-dark-bg px-8 py-4 rounded-lg font-semibold text-lg hover:bg-brand-accent/90 transition-colors"
+                className="inline-flex items-center space-x-2 bg-brand-purple text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-brand-purple/90 shadow-lg shadow-brand-purple/25 transition-all"
               >
                 <Download className="w-5 h-5" />
                 <span>免费下载 Windows 版</span>
@@ -162,7 +162,7 @@ const AlphaMoonTools = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="inline-flex items-center space-x-2 bg-transparent border-2 border-neutral-gray text-white px-8 py-4 rounded-lg font-semibold text-lg hover:border-brand-accent hover:text-brand-accent transition-colors"
+                className="inline-flex items-center space-x-2 bg-transparent border-2 border-neutral-gray text-white px-8 py-4 rounded-lg font-semibold text-lg hover:border-brand-purple hover:text-brand-purple transition-colors"
               >
                 <span>获取 macOS 版</span>
               </motion.button>
@@ -230,23 +230,23 @@ const AlphaMoonTools = () => {
                 {/* Feature Content */}
                 <div className={index % 2 === 1 ? 'lg:col-start-2' : ''}>
                   <div className="flex items-center space-x-4 mb-6">
-                    <div className="w-16 h-16 bg-brand-accent/10 rounded-xl flex items-center justify-center">
-                      <feature.icon className="w-8 h-8 text-brand-accent" />
+                    <div className="w-16 h-16 bg-brand-purple/10 rounded-xl flex items-center justify-center">
+                      <feature.icon className="w-8 h-8 text-brand-purple" />
                     </div>
                     <h3 className="text-3xl font-bold text-white">{feature.title}</h3>
                   </div>
                   <p className="text-lg text-neutral-gray mb-6">{feature.description}</p>
                   <ul className="space-y-3">
                     <li className="flex items-center space-x-3">
-                      <Check className="w-5 h-5 text-brand-accent flex-shrink-0" />
+                      <Check className="w-5 h-5 text-brand-purple flex-shrink-0" />
                       <span className="text-white">一键批量操作，效率提升10倍</span>
                     </li>
                     <li className="flex items-center space-x-3">
-                      <Check className="w-5 h-5 text-brand-accent flex-shrink-0" />
+                      <Check className="w-5 h-5 text-brand-purple flex-shrink-0" />
                       <span className="text-white">智能风控系统，安全有保障</span>
                     </li>
                     <li className="flex items-center space-x-3">
-                      <Check className="w-5 h-5 text-brand-accent flex-shrink-0" />
+                      <Check className="w-5 h-5 text-brand-purple flex-shrink-0" />
                       <span className="text-white">实时数据同步，掌握每个细节</span>
                     </li>
                   </ul>
@@ -256,7 +256,7 @@ const AlphaMoonTools = () => {
                 <div className={index % 2 === 1 ? 'lg:col-start-1' : ''}>
                   <div className="bg-dark-bg border border-neutral-gray/20 rounded-xl p-8">
                     <div className="aspect-video bg-gradient-to-br from-dark-secondary to-dark-bg rounded-lg flex items-center justify-center">
-                      <feature.icon className="w-24 h-24 text-brand-accent/20" />
+                      <feature.icon className="w-24 h-24 text-brand-purple/20" />
                     </div>
                   </div>
                 </div>
@@ -302,7 +302,7 @@ const AlphaMoonTools = () => {
                   </div>
                 </div>
                 <p className="text-neutral-gray mb-4">"{testimonial.content}"</p>
-                <a href="#" className="text-brand-accent text-sm hover:text-brand-accent/80">
+                <a href="#" className="text-brand-purple text-sm hover:text-brand-purple/80">
                   {testimonial.twitter}
                 </a>
               </motion.div>
@@ -338,31 +338,31 @@ const AlphaMoonTools = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 className={`relative bg-dark-bg border ${
-                  plan.popular ? 'border-brand-accent' : 'border-neutral-gray/20'
+                  plan.popular ? 'border-brand-purple' : 'border-neutral-gray/20'
                 } rounded-xl p-8`}
               >
                 {plan.popular && (
-                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-brand-accent text-dark-bg px-4 py-1 rounded-full text-sm font-semibold">
+                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-brand-gold text-white px-4 py-1 rounded-full text-sm font-semibold">
                     最受欢迎
                   </div>
                 )}
                 <h3 className="text-2xl font-bold text-white mb-2">{plan.name}</h3>
                 <div className="mb-6">
-                  <span className="text-4xl font-bold text-white">${plan.price}</span>
+                  <span className="text-4xl font-bold text-brand-gold">${plan.price}</span>
                   <span className="text-neutral-gray">/月</span>
                 </div>
                 <ul className="space-y-3 mb-8">
                   {plan.features.map((feature, i) => (
                     <li key={i} className="flex items-center space-x-3">
-                      <Check className="w-5 h-5 text-brand-accent flex-shrink-0" />
+                      <Check className="w-5 h-5 text-brand-purple flex-shrink-0" />
                       <span className="text-neutral-gray">{feature}</span>
                     </li>
                   ))}
                 </ul>
                 <button className={`w-full py-3 rounded-lg font-semibold transition-all ${
                   plan.popular
-                    ? 'bg-brand-accent text-dark-bg hover:bg-brand-accent/90'
-                    : 'bg-transparent border border-neutral-gray text-white hover:border-brand-accent hover:text-brand-accent'
+                    ? 'bg-brand-purple text-white hover:bg-brand-purple/90 shadow-lg shadow-brand-purple/25'
+                    : 'bg-transparent border border-neutral-gray text-white hover:border-brand-purple hover:text-brand-purple'
                 }`}>
                   {plan.cta}
                 </button>
@@ -406,7 +406,7 @@ const AlphaMoonTools = () => {
       </section>
 
       {/* Download CTA */}
-      <section id="download" className="py-20 bg-gradient-to-r from-brand-accent/10 to-yellow-400/10">
+      <section id="download" className="py-20 bg-gradient-to-r from-brand-purple/10 to-brand-gold/10">
         <div className="container mx-auto px-4 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -421,7 +421,7 @@ const AlphaMoonTools = () => {
               立即下载AlphaMoon工具，加入数千名专业空投猎人的行列
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="inline-flex items-center space-x-2 bg-brand-accent text-dark-bg px-8 py-4 rounded-lg font-semibold text-lg hover:bg-brand-accent/90 transition-colors">
+              <button className="inline-flex items-center space-x-2 bg-brand-purple text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-brand-purple/90 shadow-lg shadow-brand-purple/25 transition-all">
                 <Download className="w-5 h-5" />
                 <span>Windows版下载</span>
               </button>

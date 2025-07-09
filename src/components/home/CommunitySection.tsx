@@ -46,7 +46,7 @@ const CommunitySection = () => {
 
         {/* Mission Statement */}
         <motion.div
-          className="bg-gradient-to-r from-brand-accent/10 to-yellow-400/10 rounded-2xl p-8 md:p-12 mb-16 relative overflow-hidden"
+          className="bg-gradient-to-r from-brand-purple/10 to-brand-gold/10 rounded-2xl p-8 md:p-12 mb-16 relative overflow-hidden"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -54,8 +54,8 @@ const CommunitySection = () => {
         >
           {/* Background Pattern */}
           <div className="absolute inset-0 opacity-10">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-brand-accent rounded-full blur-3xl"></div>
-            <div className="absolute bottom-0 left-0 w-96 h-96 bg-yellow-400 rounded-full blur-3xl"></div>
+            <div className="absolute top-0 right-0 w-64 h-64 bg-brand-purple rounded-full blur-3xl"></div>
+            <div className="absolute bottom-0 left-0 w-96 h-96 bg-brand-gold rounded-full blur-3xl"></div>
           </div>
 
           <div className="relative z-10 text-center">
@@ -78,9 +78,9 @@ const CommunitySection = () => {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="group"
             >
-              <div className="bg-dark-bg border border-neutral-gray/20 rounded-xl p-6 h-full hover:border-brand-accent/50 transition-all duration-300">
-                <div className="w-14 h-14 bg-brand-accent/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-brand-accent/20 transition-colors">
-                  <value.icon className="w-7 h-7 text-brand-accent" />
+              <div className="bg-dark-bg border border-neutral-gray/20 rounded-xl p-6 h-full hover:border-brand-purple/50 transition-all duration-300">
+                <div className="w-14 h-14 bg-brand-purple/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-brand-purple/20 transition-colors">
+                  <value.icon className="w-7 h-7 text-brand-purple" />
                 </div>
                 <h3 className="text-xl font-semibold text-white mb-3">
                   {value.title}
@@ -103,17 +103,17 @@ const CommunitySection = () => {
         >
           <div className="inline-flex items-center space-x-8 bg-dark-bg border border-neutral-gray/20 rounded-full px-8 py-4">
             <div className="text-center">
-              <div className="text-2xl font-bold text-brand-accent">24/7</div>
+              <div className="text-2xl font-bold text-brand-gold">24/7</div>
               <div className="text-sm text-neutral-gray">在线支持</div>
             </div>
             <div className="w-px h-10 bg-neutral-gray/30"></div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-brand-accent">50+</div>
+              <div className="text-2xl font-bold text-brand-gold">50+</div>
               <div className="text-sm text-neutral-gray">合作伙伴</div>
             </div>
             <div className="w-px h-10 bg-neutral-gray/30"></div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-brand-accent">100%</div>
+              <div className="text-2xl font-bold text-brand-gold">100%</div>
               <div className="text-sm text-neutral-gray">开源透明</div>
             </div>
           </div>

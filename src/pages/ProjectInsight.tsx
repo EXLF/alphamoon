@@ -85,7 +85,7 @@ const ProjectInsight = () => {
                 <ul className="space-y-3">
                   {categories.map((category, index) => (
                     <li key={index}>
-                      <button className="w-full flex items-center justify-between text-left hover:text-brand-accent transition-colors">
+                      <button className="w-full flex items-center justify-between text-left hover:text-brand-purple transition-colors">
                         <span className="text-neutral-gray">{category.name}</span>
                         <span className="text-sm text-neutral-gray/60">({category.count})</span>
                       </button>
@@ -101,7 +101,7 @@ const ProjectInsight = () => {
                   {['LayerZero', 'zkSync', 'Arbitrum', 'DeFi', 'NFT', 'GameFi', 'Layer2', '空投策略'].map((tag) => (
                     <span
                       key={tag}
-                      className="px-3 py-1 bg-dark-bg text-sm text-neutral-gray rounded-lg hover:text-brand-accent hover:border-brand-accent cursor-pointer transition-colors"
+                      className="px-3 py-1 bg-dark-bg text-sm text-neutral-gray rounded-lg hover:text-brand-purple hover:border-brand-purple cursor-pointer transition-colors"
                     >
                       {tag}
                     </span>
@@ -117,15 +117,15 @@ const ProjectInsight = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="bg-gradient-to-br from-brand-accent/10 to-transparent border border-brand-accent/30 rounded-xl p-8 mb-8"
+                className="bg-gradient-to-br from-brand-purple/10 to-transparent border border-brand-purple/30 rounded-xl p-8 mb-8"
               >
                 <div className="flex items-center space-x-3 mb-4">
-                  <span className="bg-brand-accent text-dark-bg px-3 py-1 rounded-full text-sm font-semibold">
+                  <span className="bg-brand-gold text-white px-3 py-1 rounded-full text-sm font-semibold">
                     精选
                   </span>
                   <span className="text-neutral-gray text-sm">深度研究</span>
                 </div>
-                <h2 className="text-2xl font-bold text-white mb-3 hover:text-brand-accent transition-colors cursor-pointer">
+                <h2 className="text-2xl font-bold text-white mb-3 hover:text-brand-purple transition-colors cursor-pointer">
                   LayerZero深度分析：全链互操作性的未来
                 </h2>
                 <p className="text-neutral-gray mb-4">
@@ -142,7 +142,7 @@ const ProjectInsight = () => {
                       5.2K阅读
                     </span>
                   </div>
-                  <button className="flex items-center space-x-2 text-brand-accent hover:text-brand-accent/80 font-medium group">
+                  <button className="flex items-center space-x-2 text-brand-purple hover:text-brand-purple/80 font-medium group">
                     <span>阅读全文</span>
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </button>
@@ -157,13 +157,13 @@ const ProjectInsight = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.3 + index * 0.1 }}
-                    className="bg-dark-secondary border border-neutral-gray/20 rounded-xl p-6 hover:border-brand-accent/50 transition-all duration-300"
+                    className="bg-dark-secondary border border-neutral-gray/20 rounded-xl p-6 hover:border-brand-purple/50 transition-all duration-300"
                   >
                     <div className="flex items-center justify-between mb-3">
-                      <span className="text-sm text-brand-accent">{article.category}</span>
+                      <span className="text-sm text-brand-purple">{article.category}</span>
                       <span className="text-sm text-neutral-gray">{article.readTime}</span>
                     </div>
-                    <h3 className="text-lg font-semibold text-white mb-2 hover:text-brand-accent transition-colors cursor-pointer">
+                    <h3 className="text-lg font-semibold text-white mb-2 hover:text-brand-purple transition-colors cursor-pointer">
                       {article.title}
                     </h3>
                     <p className="text-sm text-neutral-gray mb-4 line-clamp-2">
@@ -201,7 +201,7 @@ const ProjectInsight = () => {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.6, delay: 0.8 }}
               >
-                <button className="inline-flex items-center space-x-2 bg-dark-secondary border border-neutral-gray/20 text-white px-6 py-3 rounded-lg hover:border-brand-accent hover:text-brand-accent transition-colors">
+                <button className="inline-flex items-center space-x-2 bg-dark-secondary border border-neutral-gray/20 text-white px-6 py-3 rounded-lg hover:border-brand-purple hover:text-brand-purple transition-colors">
                   <span>加载更多</span>
                 </button>
               </motion.div>

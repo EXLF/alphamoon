@@ -105,7 +105,7 @@ const FeaturedAirdrops = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
             >
-              <div className="relative bg-dark-bg border border-neutral-gray/20 rounded-xl p-6 hover:border-brand-accent/50 transition-all duration-300 group">
+              <div className="relative bg-dark-bg border border-neutral-gray/20 rounded-xl p-6 hover:border-brand-purple/50 transition-all duration-300 group">
                 {/* Hot Badge */}
                 {airdrop.isHot && (
                   <div className="absolute -top-3 -right-3 bg-red-500 text-white text-xs px-3 py-1 rounded-full font-semibold animate-pulse">
@@ -117,7 +117,7 @@ const FeaturedAirdrops = () => {
                 <div className="flex items-center space-x-4 mb-4">
                   <div className="text-4xl">{airdrop.logo}</div>
                   <div>
-                    <h3 className="text-lg font-semibold text-white group-hover:text-brand-accent transition-colors">
+                    <h3 className="text-lg font-semibold text-white group-hover:text-brand-purple transition-colors">
                       {airdrop.name}
                     </h3>
                     <p className="text-sm text-neutral-gray">{airdrop.category}</p>
@@ -138,7 +138,7 @@ const FeaturedAirdrops = () => {
                       <DollarSign className="w-4 h-4 mr-1" />
                       预估价值
                     </span>
-                    <span className="text-sm font-semibold text-brand-accent">
+                    <span className="text-sm font-semibold text-brand-gold">
                       {airdrop.estimatedValue}
                     </span>
                   </div>
@@ -165,7 +165,7 @@ const FeaturedAirdrops = () => {
                 {/* Action Button */}
                 <Link
                   to={`/airdrop-center#${airdrop.id}`}
-                  className="mt-6 w-full bg-brand-accent/10 text-brand-accent border border-brand-accent/30 py-2 rounded-lg font-medium hover:bg-brand-accent hover:text-dark-bg transition-all duration-300 flex items-center justify-center space-x-2 group"
+                  className="mt-6 w-full bg-brand-purple/10 text-brand-purple border border-brand-purple/30 py-2 rounded-lg font-medium hover:bg-brand-purple hover:text-white hover:shadow-lg hover:shadow-brand-purple/25 transition-all duration-300 flex items-center justify-center space-x-2 group"
                 >
                   <span>查看详情</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -185,7 +185,7 @@ const FeaturedAirdrops = () => {
         >
           <Link
             to="/airdrop-center"
-            className="inline-flex items-center space-x-2 text-brand-accent hover:text-brand-accent/80 font-semibold text-lg group"
+            className="inline-flex items-center space-x-2 text-brand-purple hover:text-brand-purple/80 font-semibold text-lg group"
           >
             <span>查看全部空投</span>
             <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />

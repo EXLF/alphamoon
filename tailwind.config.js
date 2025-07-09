@@ -7,10 +7,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        'dark-bg': '#1A1A1A',
-        'dark-secondary': '#0D1117',
+        'dark-bg': '#101014', // 深空灰
+        'dark-secondary': '#0D1117', // 暗夜蓝
         'neutral-gray': '#888888',
-        'brand-accent': '#FFD700', // 金黄色作为品牌点缀色，可根据Logo调整
+        'light-gray': '#CCCCCC', // 淡灰色
+        'near-white': '#F0F0F0', // 近白色
+        'brand-purple': '#5D55E8', // 科技紫 - 主品牌色
+        'brand-gold': '#F1DC4D', // 亮金 - 高亮色
+        'brand-accent': '#5D55E8', // 保留别名以兼容
       },
       fontFamily: {
         'sans': ['Inter', 'Source Han Sans', 'PingFang SC', 'sans-serif'],

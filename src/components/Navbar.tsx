@@ -35,8 +35,8 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="20" cy="20" r="18" stroke="#FFD700" strokeWidth="2"/>
-              <path d="M20 10C25.523 10 30 14.477 30 20C30 25.523 25.523 30 20 30C18.5 30 17 29.5 15.5 28.5C17.5 28 19 26.5 20 24.5C21 26.5 22.5 28 24.5 28.5C26 27.5 27 25.5 27 23C27 19 24 16 20 16C16 16 13 19 13 23C13 25.5 14 27.5 15.5 28.5" fill="#FFD700"/>
+              <circle cx="20" cy="20" r="18" stroke="#5D55E8" strokeWidth="2"/>
+              <path d="M20 10C25.523 10 30 14.477 30 20C30 25.523 25.523 30 20 30C18.5 30 17 29.5 15.5 28.5C17.5 28 19 26.5 20 24.5C21 26.5 22.5 28 24.5 28.5C26 27.5 27 25.5 27 23C27 19 24 16 20 16C16 16 13 19 13 23C13 25.5 14 27.5 15.5 28.5" fill="#5D55E8"/>
             </svg>
             <span className="text-xl font-bold text-white">AlphaMoon</span>
           </Link>
@@ -81,7 +81,7 @@ const Navbar = () => {
             </button>
 
             {/* Connect Wallet Button */}
-            <button className="hidden sm:flex items-center space-x-2 bg-brand-accent text-dark-bg px-4 py-2 rounded-lg font-medium hover:bg-brand-accent/90 transition-colors">
+            <button className="hidden sm:flex items-center space-x-2 bg-brand-purple text-white px-4 py-2 rounded-lg font-medium hover:bg-brand-purple/90 transition-colors shadow-lg shadow-brand-purple/25 hover:shadow-brand-purple/40">
               <Wallet size={18} />
               <span>连接钱包</span>
             </button>
@@ -155,7 +155,7 @@ const Navbar = () => {
                   )}
                 </div>
               ))}
-              <button className="w-full flex items-center justify-center space-x-2 bg-brand-accent text-dark-bg px-4 py-3 rounded-lg font-medium">
+              <button className="w-full flex items-center justify-center space-x-2 bg-brand-purple text-white px-4 py-3 rounded-lg font-medium shadow-lg shadow-brand-purple/25">
                 <Wallet size={18} />
                 <span>连接钱包</span>
               </button>

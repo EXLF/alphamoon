@@ -80,7 +80,7 @@ const AboutUs = () => {
       {/* Hero Section */}
       <section className="relative py-20 overflow-hidden">
         {/* Background Pattern */}
-        <div className="absolute inset-0 bg-gradient-to-br from-brand-accent/5 via-transparent to-brand-accent/5"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-brand-purple/5 via-transparent to-brand-purple/5"></div>
         
         <div className="container mx-auto px-4 relative z-10">
           <motion.div
@@ -91,7 +91,7 @@ const AboutUs = () => {
           >
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
               关于
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent to-yellow-300">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-purple to-brand-gold">
                 AlphaMoon
               </span>
             </h1>
@@ -135,26 +135,26 @@ const AboutUs = () => {
               <div className="bg-dark-bg border border-neutral-gray/20 rounded-xl p-8">
                 <div className="grid grid-cols-2 gap-6">
                   <div className="text-center">
-                    <div className="text-4xl font-bold text-brand-accent mb-2">10K+</div>
+                    <div className="text-4xl font-bold text-brand-gold mb-2">10K+</div>
                     <div className="text-neutral-gray">活跃用户</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-4xl font-bold text-brand-accent mb-2">500+</div>
+                    <div className="text-4xl font-bold text-brand-gold mb-2">500+</div>
                     <div className="text-neutral-gray">空投项目</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-4xl font-bold text-brand-accent mb-2">50+</div>
+                    <div className="text-4xl font-bold text-brand-gold mb-2">50+</div>
                     <div className="text-neutral-gray">合作伙伴</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-4xl font-bold text-brand-accent mb-2">$1M+</div>
+                    <div className="text-4xl font-bold text-brand-gold mb-2">$1M+</div>
                     <div className="text-neutral-gray">用户收益</div>
                   </div>
                 </div>
               </div>
               {/* Decorative Elements */}
-              <div className="absolute -top-4 -right-4 w-24 h-24 bg-brand-accent/20 rounded-full blur-2xl"></div>
-              <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-brand-accent/10 rounded-full blur-3xl"></div>
+              <div className="absolute -top-4 -right-4 w-24 h-24 bg-brand-purple/20 rounded-full blur-2xl"></div>
+              <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-brand-purple/10 rounded-full blur-3xl"></div>
             </motion.div>
           </div>
         </div>
@@ -169,11 +169,11 @@ const AboutUs = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="bg-gradient-to-br from-brand-accent/10 to-transparent border border-brand-accent/30 rounded-xl p-8"
+              className="bg-gradient-to-br from-brand-purple/10 to-transparent border border-brand-purple/30 rounded-xl p-8"
             >
               <div className="flex items-center space-x-4 mb-4">
-                <div className="w-12 h-12 bg-brand-accent/20 rounded-lg flex items-center justify-center">
-                  <Target className="w-6 h-6 text-brand-accent" />
+                <div className="w-12 h-12 bg-brand-purple/20 rounded-lg flex items-center justify-center">
+                  <Target className="w-6 h-6 text-brand-purple" />
                 </div>
                 <h3 className="text-2xl font-bold text-white">我们的使命</h3>
               </div>
@@ -186,11 +186,11 @@ const AboutUs = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="bg-gradient-to-br from-yellow-400/10 to-transparent border border-yellow-400/30 rounded-xl p-8"
+              className="bg-gradient-to-br from-brand-gold/10 to-transparent border border-brand-gold/30 rounded-xl p-8"
             >
               <div className="flex items-center space-x-4 mb-4">
-                <div className="w-12 h-12 bg-yellow-400/20 rounded-lg flex items-center justify-center">
-                  <Rocket className="w-6 h-6 text-yellow-400" />
+                <div className="w-12 h-12 bg-brand-gold/20 rounded-lg flex items-center justify-center">
+                  <Rocket className="w-6 h-6 text-brand-gold" />
                 </div>
                 <h3 className="text-2xl font-bold text-white">我们的愿景</h3>
               </div>
@@ -223,10 +223,10 @@ const AboutUs = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="bg-dark-bg border border-neutral-gray/20 rounded-xl p-6 text-center hover:border-brand-accent/50 transition-all duration-300"
+                className="bg-dark-bg border border-neutral-gray/20 rounded-xl p-6 text-center hover:border-brand-purple/50 transition-all duration-300"
               >
-                <div className="w-16 h-16 bg-brand-accent/10 rounded-xl flex items-center justify-center mx-auto mb-4">
-                  <value.icon className="w-8 h-8 text-brand-accent" />
+                <div className="w-16 h-16 bg-brand-purple/10 rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <value.icon className="w-8 h-8 text-brand-purple" />
                 </div>
                 <h3 className="text-xl font-semibold text-white mb-2">{value.title}</h3>
                 <p className="text-neutral-gray text-sm">{value.description}</p>
@@ -261,7 +261,7 @@ const AboutUs = () => {
               >
                 <div className="text-6xl mb-4">{member.avatar}</div>
                 <h3 className="text-xl font-semibold text-white mb-1">{member.name}</h3>
-                <p className="text-brand-accent mb-2">{member.role}</p>
+                <p className="text-brand-purple mb-2">{member.role}</p>
                 <p className="text-sm text-neutral-gray">{member.description}</p>
               </motion.div>
             ))}
@@ -293,11 +293,11 @@ const AboutUs = () => {
                 className="flex items-center mb-12 last:mb-0"
               >
                 <div className={`flex-1 ${index % 2 === 0 ? 'text-right pr-8' : 'order-2 pl-8'}`}>
-                  <h3 className="text-2xl font-bold text-brand-accent mb-2">{milestone.title}</h3>
+                  <h3 className="text-2xl font-bold text-brand-gold mb-2">{milestone.title}</h3>
                   <p className="text-neutral-gray">{milestone.description}</p>
                 </div>
                 <div className="relative flex-shrink-0">
-                  <div className="w-4 h-4 bg-brand-accent rounded-full"></div>
+                  <div className="w-4 h-4 bg-brand-purple rounded-full"></div>
                   {index !== milestones.length - 1 && (
                     <div className="absolute top-4 left-1/2 transform -translate-x-1/2 w-0.5 h-24 bg-neutral-gray/30"></div>
                   )}
@@ -326,7 +326,7 @@ const AboutUs = () => {
             <p className="text-xl text-neutral-gray mb-8 max-w-2xl mx-auto">
               无论您是用户、合作伙伴还是投资者，我们都期待与您建立联系
             </p>
-            <button className="inline-flex items-center space-x-2 bg-brand-accent text-dark-bg px-8 py-4 rounded-lg font-semibold text-lg hover:bg-brand-accent/90 transition-colors">
+            <button className="inline-flex items-center space-x-2 bg-brand-purple text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-brand-purple/90 shadow-lg shadow-brand-purple/25 transition-all">
               <span>联系我们</span>
             </button>
           </motion.div>

@@ -49,7 +49,7 @@ const PartnersSection = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.05 }}
             >
-              <div className="bg-dark-secondary border border-neutral-gray/20 rounded-xl p-8 w-full hover:border-brand-accent/50 transition-all duration-300 group cursor-pointer">
+              <div className="bg-dark-secondary border border-neutral-gray/20 rounded-xl p-8 w-full hover:border-brand-purple/50 transition-all duration-300 group cursor-pointer">
                 <div className="flex flex-col items-center space-y-3">
                   <div className="text-5xl group-hover:scale-110 transition-transform duration-300">
                     {partner.logo}
@@ -76,7 +76,7 @@ const PartnersSection = () => {
           </p>
           <a
             href="#"
-            className="inline-flex items-center space-x-2 text-brand-accent hover:text-brand-accent/80 font-semibold"
+            className="inline-flex items-center space-x-2 text-brand-purple hover:text-brand-purple/80 font-semibold"
           >
             <span>联系我们</span>
             <span>→</span>

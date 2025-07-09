@@ -42,7 +42,7 @@ const ToolsIntro = () => {
           >
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               强大的
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent to-yellow-300">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-purple to-brand-gold">
                 AlphaMoon工具套件
               </span>
             </h2>
@@ -61,8 +61,8 @@ const ToolsIntro = () => {
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                 >
-                  <div className="flex-shrink-0 w-12 h-12 bg-brand-accent/10 rounded-lg flex items-center justify-center">
-                    <feature.icon className="w-6 h-6 text-brand-accent" />
+                  <div className="flex-shrink-0 w-12 h-12 bg-brand-purple/10 rounded-lg flex items-center justify-center">
+                    <feature.icon className="w-6 h-6 text-brand-purple" />
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-white mb-1">
@@ -80,14 +80,14 @@ const ToolsIntro = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 to="/tools"
-                className="inline-flex items-center justify-center space-x-2 bg-brand-accent text-dark-bg px-6 py-3 rounded-lg font-semibold hover:bg-brand-accent/90 transition-colors group"
+                className="inline-flex items-center justify-center space-x-2 bg-brand-purple text-white px-6 py-3 rounded-lg font-semibold hover:bg-brand-purple/90 hover:shadow-lg hover:shadow-brand-purple/25 transition-all duration-300 group"
               >
                 <span>了解更多</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
               <Link
                 to="/tools#download"
-                className="inline-flex items-center justify-center space-x-2 border-2 border-neutral-gray text-white px-6 py-3 rounded-lg font-semibold hover:border-brand-accent hover:text-brand-accent transition-colors"
+                className="inline-flex items-center justify-center space-x-2 border-2 border-neutral-gray text-white px-6 py-3 rounded-lg font-semibold hover:border-brand-purple hover:text-brand-purple transition-colors"
               >
                 <Zap className="w-5 h-5" />
                 <span>立即下载</span>
@@ -106,7 +106,7 @@ const ToolsIntro = () => {
             {/* Mock Tool UI */}
             <div className="relative">
               {/* Glow Effect */}
-              <div className="absolute inset-0 bg-brand-accent/20 blur-3xl"></div>
+              <div className="absolute inset-0 bg-brand-purple/20 blur-3xl"></div>
               
               {/* Tool Window */}
               <div className="relative bg-dark-secondary border border-neutral-gray/20 rounded-xl overflow-hidden shadow-2xl">
@@ -124,11 +124,11 @@ const ToolsIntro = () => {
                   <div className="grid grid-cols-2 gap-4 mb-6">
                     <div className="bg-dark-bg/50 rounded-lg p-4">
                       <div className="text-sm text-neutral-gray mb-1">总钱包数</div>
-                      <div className="text-2xl font-bold text-brand-accent">156</div>
+                      <div className="text-2xl font-bold text-brand-gold">156</div>
                     </div>
                     <div className="bg-dark-bg/50 rounded-lg p-4">
                       <div className="text-sm text-neutral-gray mb-1">今日收益</div>
-                      <div className="text-2xl font-bold text-green-400">$2,847</div>
+                      <div className="text-2xl font-bold text-brand-gold">$2,847</div>
                     </div>
                   </div>
                   
@@ -162,7 +162,7 @@ const ToolsIntro = () => {
 
             {/* Floating Elements */}
             <motion.div
-              className="absolute -top-4 -right-4 bg-brand-accent text-dark-bg px-4 py-2 rounded-full font-semibold text-sm"
+              className="absolute -top-4 -right-4 bg-brand-purple text-white px-4 py-2 rounded-full font-semibold text-sm shadow-lg shadow-brand-purple/25"
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 3, repeat: Infinity }}
             >

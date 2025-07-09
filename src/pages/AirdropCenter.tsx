@@ -63,26 +63,26 @@ const AirdropCenter = () => {
               onClick={() => setActiveTab('plaza')}
               className={`py-4 font-medium transition-colors relative ${
                 activeTab === 'plaza' 
-                  ? 'text-brand-accent' 
+                  ? 'text-brand-purple' 
                   : 'text-neutral-gray hover:text-white'
               }`}
             >
               空投广场
               {activeTab === 'plaza' && (
-                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-brand-accent"></div>
+                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-brand-purple"></div>
               )}
             </button>
             <button
               onClick={() => setActiveTab('tutorials')}
               className={`py-4 font-medium transition-colors relative ${
                 activeTab === 'tutorials' 
-                  ? 'text-brand-accent' 
+                  ? 'text-brand-purple' 
                   : 'text-neutral-gray hover:text-white'
               }`}
             >
               精选教程
               {activeTab === 'tutorials' && (
-                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-brand-accent"></div>
+                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-brand-purple"></div>
               )}
             </button>
           </div>
@@ -104,14 +104,14 @@ const AirdropCenter = () => {
                       <input
                         type="text"
                         placeholder="搜索项目名称..."
-                        className="w-full bg-dark-secondary border border-neutral-gray/20 rounded-lg pl-10 pr-4 py-3 text-white placeholder-neutral-gray focus:outline-none focus:border-brand-accent"
+                        className="w-full bg-dark-secondary border border-neutral-gray/20 rounded-lg pl-10 pr-4 py-3 text-white placeholder-neutral-gray focus:outline-none focus:border-brand-purple"
                       />
                     </div>
                   </div>
 
                   {/* Sort Dropdown */}
                   <div className="relative">
-                    <button className="flex items-center space-x-2 bg-dark-secondary border border-neutral-gray/20 rounded-lg px-4 py-3 text-white hover:border-brand-accent transition-colors">
+                    <button className="flex items-center space-x-2 bg-dark-secondary border border-neutral-gray/20 rounded-lg px-4 py-3 text-white hover:border-brand-purple transition-colors">
                       <Filter className="w-5 h-5" />
                       <span>排序：热门</span>
                       <ChevronDown className="w-4 h-4" />
@@ -127,7 +127,7 @@ const AirdropCenter = () => {
                       onClick={() => setSelectedCategory(category.id)}
                       className={`px-4 py-2 rounded-lg font-medium transition-all ${
                         selectedCategory === category.id
-                          ? 'bg-brand-accent text-dark-bg'
+                          ? 'bg-brand-purple text-white shadow-lg shadow-brand-purple/25'
                           : 'bg-dark-secondary text-neutral-gray hover:text-white border border-neutral-gray/20'
                       }`}
                     >
@@ -145,7 +145,7 @@ const AirdropCenter = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: index * 0.1 }}
-                    className="bg-dark-secondary border border-neutral-gray/20 rounded-xl p-6 hover:border-brand-accent/50 transition-all duration-300"
+                    className="bg-dark-secondary border border-neutral-gray/20 rounded-xl p-6 hover:border-brand-purple/50 transition-all duration-300"
                   >
                     {/* Card content similar to homepage but more detailed */}
                     <div className="flex items-start justify-between mb-4">
@@ -169,11 +169,11 @@ const AirdropCenter = () => {
                     <div className="mb-4">
                       <div className="flex justify-between text-sm mb-1">
                         <span className="text-neutral-gray">进度</span>
-                        <span className="text-brand-accent">{airdrop.progress}%</span>
+                        <span className="text-brand-gold font-semibold">{airdrop.progress}%</span>
                       </div>
                       <div className="w-full bg-dark-bg rounded-full h-2">
                         <div 
-                          className="bg-brand-accent h-2 rounded-full"
+                          className="bg-gradient-to-r from-brand-purple to-brand-gold h-2 rounded-full"
                           style={{ width: `${airdrop.progress}%` }}
                         ></div>
                       </div>
@@ -183,7 +183,7 @@ const AirdropCenter = () => {
                     <div className="grid grid-cols-2 gap-4 mb-4">
                       <div>
                         <div className="text-sm text-neutral-gray mb-1">预估价值</div>
-                        <div className="text-brand-accent font-semibold">{airdrop.estimatedValue}</div>
+                        <div className="text-brand-gold font-semibold">{airdrop.estimatedValue}</div>
                       </div>
                       <div>
                         <div className="text-sm text-neutral-gray mb-1">参与人数</div>
@@ -200,7 +200,7 @@ const AirdropCenter = () => {
                       ))}
                     </div>
 
-                    <button className="w-full bg-brand-accent/10 text-brand-accent border border-brand-accent/30 py-2 rounded-lg font-medium hover:bg-brand-accent hover:text-dark-bg transition-all duration-300">
+                    <button className="w-full bg-brand-purple/10 text-brand-purple border border-brand-purple/30 py-2 rounded-lg font-medium hover:bg-brand-purple hover:text-white hover:shadow-lg hover:shadow-brand-purple/25 transition-all duration-300">
                       查看详情
                     </button>
                   </motion.div>
@@ -224,7 +224,7 @@ const AirdropCenter = () => {
                 </p>
                 <div className="flex items-center justify-between">
                   <span className="text-sm text-neutral-gray">15分钟阅读</span>
-                  <button className="text-brand-accent hover:text-brand-accent/80">
+                  <button className="text-brand-purple hover:text-brand-purple/80">
                     阅读更多 →
                   </button>
                 </div>
